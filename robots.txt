@@ -1,0 +1,8 @@
+# robotstxt.org/
+
+User-agent: *
+
+sitemap: https://www.sitio.com/sitemap.xml
+
+Disallow :/admin/*
+Disallow :/Templates/*

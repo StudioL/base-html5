@@ -1,0 +1,179 @@
+body {
+font: normal 1em Arial, Helvetica, sans-serif;
+}
+a {
+color:#20690E;
+text-decoration: underline; 
+}
+a:hover {
+text-decoration: none;
+}
+h1 {
+background-color: #20690E;
+padding: 20px;
+font: bold 1.1em Arial, Helvetica, sans-serif;
+color:#FFFFFF;
+}
+h2 {
+margin: 5px 0px 0px 20px;
+padding: 5px 0px 0px 0px;
+border-bottom: 1px solid #20690E;
+color: #20690E;
+width: 30%;
+}
+h3 {
+margin: 10px 0px 10px 0px;
+font: bold 1.1em Arial, Helvetica, sans-serif;
+}
+h4 {
+margin: 10px 0px 10px 0px;
+font: bold 1em Arial, Helvetica, sans-serif;
+}
+#menu {
+padding: 5px;
+text-align: right;
+font: normal 0.8em Arial, Helvetica, sans-serif;
+border-bottom: 1px solid #20690E;
+}
+#contenido {
+padding: 20px;
+font: normal 0.8em Arial, Helvetica, sans-serif;
+color:#333333;
+}
+#contenido p {
+margin: 0px 0px 5px 0px;
+}
+div#mensajes {
+border: 1px dotted #006699;
+margin: 20px 100px 20px 100px;
+padding: 10px;
+}
+#piediseno {
+margin-top: 30px;
+border-top: 1px solid #20690E;
+padding: 20px;
+color:#20690E;
+font: normal 0.7em Arial, Helvetica, sans-serif;
+text-align: center;
+}
+#arbol {
+float: right;
+padding: 10px;
+margin: 10px;
+border: 1px solid #555;
+}
+
+form {
+margin: 20px 0px 0 px 0px;
+}
+form fieldset {
+padding: 20px;
+border: 1px solid #999;
+}
+form fieldset legend {
+color: #999;
+font: normal 0.8em Arial, Helvetica, sans-serif;
+}
+form fieldset label {
+color: #333;
+font: bold 1em Arial, Helvetica, sans-serif;
+}
+form fieldset label span {
+color: #555;
+font: normal 0.8em Arial, Helvetica, sans-serif;
+}
+
+img.adminimg {
+border: 2px solid #999;
+}
+
+table {
+border: 2px solid #555;
+margin: 20px 0px 0px 0px;
+}
+table thead tr th {
+padding: 5px;
+border: 1px solid #009933;
+background-color: #009933;
+color: #FFFFFF;
+}
+table tbody tr td {
+padding: 5px;
+border: 1px solid #999;
+}
+
+pre{
+margin: 10px;
+padding: 10px;
+background-color: #ccc;
+color: #000033;
+font: normal 1em "Courier New", Courier, monospace;
+}
+
+.expansor {
+clear: both;
+}
+
+
+
+/*============================*/
+/*=== Custom Slider Styles ===*/
+/*============================*/
+
+#slider {
+	position:relative;
+    width:488px;
+    height:220px;
+	background:url('../../imagenes/nivo/loading.gif') no-repeat 50% 50%;
+}
+#slider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+#slider a {
+	border:0;
+	display:block;
+}
+.nivo-controlNav {
+	position:absolute;
+	right: 10px;
+	bottom:-32px;
+}
+.nivo-controlNav a {
+	display:block;
+	width:22px;
+	height:22px;
+	background:url('../../imagenes/nivo/bullets.png') no-repeat;
+	text-indent:-9999px;
+	border:0;
+	margin-right:3px;
+	float:left;
+}
+.nivo-controlNav a.active {
+	background-position:0 -22px;
+}
+.nivo-directionNav a {
+	display:block;
+	width:30px;
+	height:30px;
+	background:url('../../imagenes/nivo/arrows.png') no-repeat;
+	text-indent:-9999px;
+	border:0;
+}
+a.nivo-nextNav {
+	background-position:-30px 0;
+	right:15px;
+}
+a.nivo-prevNav {
+	left:15px;
+}
+.nivo-caption p {
+	color: white;
+    font: bold 1em Helvetica, Arial, sans-serif;
+}
+.nivo-caption a { 
+    color:white;
+    text-decoration:underline;
+}

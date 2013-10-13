@@ -1,0 +1,44 @@
+/* Iconize 0.5 */
+
+/* extensions */
+
+a[href$='.doc'], a[href$='.rtf'], a[href$='.docx'] {
+	padding: 5px 20px 5px 0;
+	background: transparent url(../imagenes/file_icons/icon_doc.gif) no-repeat center right;
+}
+
+a[href$='.txt'] {
+	padding: 5px 20px 5px 0;
+	background: transparent url(../imagenes/file_icons/icon_txt.gif) no-repeat center right;
+}
+
+a[href$='.xls'] {
+	padding: 5px 20px 5px 0;
+	background: transparent url(../imagenes/file_icons/icon_xls.gif) no-repeat center right;
+}
+
+a[href$='.pps'],a[href$='.ppt'] { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(../imagenes/file_icons/icon_pps.gif) no-repeat center right;
+}
+
+a[href$='.pdf'] { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(../imagenes/file_icons/icon_pdf.gif) no-repeat center right;
+}
+
+
+a[href$='.zip'], a[href$='.rar'], a[href$='.gzip'], a[href$='.bzip'], a[href$='.ace'] { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(../imagenes/file_icons/icon_archive.gif) no-repeat center right;
+}
+
+a[href$='.mov'], a[href$='.wmv'], a[href$='.mp4'], a[href$='.avi'], a[href$='.mpg'], a[href$='.qt'] { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(../imagenes/file_icons/icon_film.gif) no-repeat center right;
+}
+
+a[href$='.mp3'], a[href$='.wav'], a[href$='.ogg'], a[href$='.wma'], a[href$='.m4a'] { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(../imagenes/file_icons/icon_music.gif) no-repeat center right;
+}

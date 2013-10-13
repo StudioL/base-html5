@@ -1,0 +1,25 @@
+# humanstxt.org
+# Los humanos responsables detrás del sitio web
+
+/* TEAM */
+
+Your title: Your name.
+Site: email, link to a contact form, etc.
+Twitter: your Twitter username.
+
+Your title: Your name.
+Site: email, link to a contact form, etc.
+Twitter: your Twitter username.
+
+	
+/* THANKS */
+
+Benito Cámelo, www.benito.com
+
+
+/* SITE */
+
+Last update: YYYY/MM/DD 
+Standards: HTML5, CSS3
+Components: jQuery, Modernizr
+Software: Notepad++, Sublime Text, Dreamweaver

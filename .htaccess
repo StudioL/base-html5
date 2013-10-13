@@ -1,0 +1,18 @@
+ErrorDocument 404 http://www.redcapacitacion.com/error404.php
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# Redirigir el dominio con www a sin www
+#RewriteCond %{HTTP_HOST} ^www\.sitio\.com$ [NC]
+#RewriteRule ^(.*)$ http://sitio.com/$1 [R=301,QSA,L]
+# Redirigir el dominio sin www a con www
+RewriteCond %{HTTP_HOST} ^sitio\.com$ [NC]
+RewriteRule ^(.*)$ http://www.sitio.com/$1 [R=301,QSA,L]
+
+#RewriteRule ^xxxx/([0-9]+)/([a-zA-Z0-9]+)$ xxx.php?x=$1 [NC,L]
+#RewriteRule ^([_a-zA-Z0-9-]+)$ xxx.php?x=$1 [NC,L]
+
+</IfModule>
+
+ErrorDocument 404: home.php?error=404
