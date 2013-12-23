@@ -1,4 +1,5 @@
 <?
+header('Content-Type: text/html; charset=UTF-8');
 setlocale(LC_ALL, 'es_ES');
 date_default_timezone_set("America/Santiago");
 
