@@ -1,5 +1,5 @@
-//******************************************
-//FUNCIÓN POPUP
+ï»¿//******************************************
+//FUNCIÃ“N POPUP
 function popup(target, name, features){
 window.open(target, name, features); 
 }
@@ -7,7 +7,7 @@ window.open(target, name, features);
 //  <a href="archivo.html" onclick="popUp(this.href, 'Popup1', 'width=100,height=200'); return false;">Abrir popup</a>
 
 //******************************************
-// FUNCIÓN TARGET BLANK, para xhtml
+// FUNCIÃ“N TARGET BLANK, para xhtml
 function openExternal(){
 if(!document.getElementsByTagName) return;
 var anchors = document.getElementsByTagName('a');
@@ -23,7 +23,7 @@ window.onload = openExternal;
 // <a href="http://www.google.cl" rel="external">Google</a>
 
 //******************************************
-// FUNCIÓN TAMAÑO TEXTO
+// FUNCIÃ“N TAMAÃ‘O TEXTO
 function zoomText(tipo){ 
 //inicializaciones 
 obj=document.getElementById("cuerpo"); 
@@ -52,16 +52,16 @@ obj.style.fontSize=valor+"%"
 //  <div id="cuerpo">Probando</div>
 
 //******************************************
-// FUNCIÓN CHECKBOX LIMITADOS
+// FUNCIÃ“N CHECKBOX LIMITADOS
 var counter = 0; //contador (variable global) 
-var maxi = 2; // máximos checkbox permitidos
+var maxi = 2; // mÃ¡ximos checkbox permitidos
 function maxcheck(chkbox){ 
 	if(chkbox.checked == false){ // si el checkbox es desmarcado 
 		counter--; 
 	} else { // si el checkbox es marcado
 
 		if(counter >= maxi){ 
-			alert("Sólo puede marcar " + maxi + " opciones"); 
+			alert("SÃ³lo puede marcar " + maxi + " opciones"); 
 			chkbox.checked = false;
 			return false; 
 		} else { 

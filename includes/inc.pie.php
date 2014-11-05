@@ -1,1 +1,1 @@
-<p>&copy; <?=date("Y")?></p>
+﻿<p>&copy; <?=date("Y")?></p>
