@@ -1,5 +1,6 @@
 div.sticky-queue
 	{ 
+	z-index:100;
 	position:fixed;
 	background:#fff;
 	border:1px solid #999;

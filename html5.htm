@@ -16,10 +16,9 @@
 <!-- PLUGINS: Jquery, Lightbox, Facebox -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
 <script src="js/modernizr.custom.full-min.js" type="text/javascript"></script>
+<link href="css/cssmenu.css" media="screen" rel="stylesheet" type="text/css"/>
+<script src="js/jquery.cssmenu.js" type="text/javascript"></script>
 <script src="js/jquery.Rut.js" type="text/javascript"></script>
-<script src="js/jquery.dropdown.js" type="text/javascript"></script>
-<link href="css/dropdown.css" media="screen" rel="stylesheet" type="text/css"/>
-<link href="css/dropdown_menu.css" media="screen" rel="stylesheet" type="text/css"/>
 <script src="js/sticky.full.js" type="text/javascript"></script>
 <link href="css/sticky.full.css" media="screen" rel="stylesheet" type="text/css"/>
 <style type="text/css">@import "css/jquery.datepick.css";</style>
@@ -35,8 +34,8 @@
 <script src="js/jquery.colorbox.js" type="text/javascript"></script>
 <link href="css/jquery.bubblepopup.css" media="screen" rel="stylesheet" type="text/css"/>
 <script src="js/jquery.bubblepopup.min.js" type="text/javascript"></script>
-<script src="js/sorttable.js" type="text/javascript"></script>
-<script src="js/jquery.tablehover.min.js" type="text/javascript"></script>
+<script src="http://cdn.datatables.net/1.10.3/js/jquery.dataTables.min.js" type="text/javascript"></script>
+<link href="http://cdn.datatables.net/1.10.3/css/jquery.dataTables.min.css" media="screen" rel="stylesheet" type="text/css"/>
 
 <!-- FUNCIONES Propios -->
 <script src="js/funciones.js" type="text/javascript" defer="defer"></script> 
@@ -70,27 +69,27 @@
 
 <header>
 <h1>Página de prueba en HTML5</h1>
-<nav>
-<ul id="nav" class="dropdown dropdown-horizontal">
-<li><a href="">Menu 1</a></li>
-<li><a href="">Menu 2</a></li>
-<li><a href="">Menu 3</a></li>
-<li><a href="">Menu 4</a>
-	<ul>
-	<li><a href="">Sub a</a></li>
-	<li><a href="">Sub b</a></li>
-	</ul>
-</li>
-<li><a href="">Menu 5</a>
-	<ul>
-	<li><a href="">Sub c</a></li>
-	<li><a href="">Sub d</a></li>
-	<li><a href="">Sub e</a></li>
-	</ul>
-</li>
-<li><a href="">Menu 6</a></li>
-</ul>
-<div class="expansor"></div>
+<nav id="cssmenu">
+<ul>
+   <li><a href="#"><span>Home</span></a></li>
+   <li class="active has-sub"><a href="#"><span>Products</span></a>
+      <ul>
+         <li class="has-sub"><a href="#"><span>Product 1</span></a>
+            <ul>
+               <li><a href="#"><span>Sub Product</span></a></li>
+               <li class="last"><a href="#"><span>Sub Product</span></a></li>
+            </ul>
+         </li>
+         <li class="has-sub"><a href="#"><span>Product 2</span></a>
+            <ul>
+               <li><a href="#"><span>Sub Product</span></a></li>
+               <li class="last"><a href="#"><span>Sub Product</span></a></li>
+            </ul>
+         </li>
+      </ul>
+   </li>
+   <li><a href="#"><span>About</span></a></li>
+   <li class="last"><a href="#"><span>Contact</span></a></li>
 </nav>
 </header>
 
@@ -180,8 +179,8 @@
 
 
 <article>
-<h2>Sort Table y Table Hover</h2>
-<table class="sortable" id="tabla1">
+<h2>Datatable</h2>
+<table class="display" id="tabla1">
 <thead>
   <tr><th>Person</th><th>Monthly pay</th><th>Month</th></tr>
 </thead>
@@ -243,6 +242,37 @@
 		$(".youtube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
 		$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
 	});
+</script>
+<script type="text/javascript">
+$(document).ready( function () {
+	$('#tabla1').DataTable( {
+		language: {
+			"sProcessing":     "Procesando...",
+			"sLengthMenu":     "Mostrar _MENU_ registros",
+			"sZeroRecords":    "No se encontraron resultados",
+			"sEmptyTable":     "Ningún dato disponible en esta tabla",
+			"sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+			"sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
+			"sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
+			"sInfoPostFix":    "",
+			"sSearch":         "Buscar:",
+			"sUrl":            "",
+			"sInfoThousands":  ",",
+			"sLoadingRecords": "Cargando...",
+			"oPaginate": {
+				"sFirst":    "Primero",
+				"sLast":     "Último",
+				"sNext":     "Siguiente",
+				"sPrevious": "Anterior"
+			},
+			"oAria": {
+				"sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
+				"sSortDescending": ": Activar para ordenar la columna de manera descendente"
+			}
+		}
+	} );
+	
+} );
 </script>
 <script type="text/javascript">
 	$(document).ready(function(){
