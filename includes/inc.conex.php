@@ -1,4 +1,4 @@
-﻿<? //CONEXIÓN DB
+<? //CONEXIÓN DB
 //Datos
 define("CON_HOST","localhost");
 define("CON_DB","");

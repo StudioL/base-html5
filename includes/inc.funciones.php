@@ -1,4 +1,4 @@
-ï»¿<?
+<?
 /******************************
 ** Marca SELECT y CHECKBOXES **
 ******************************/
@@ -49,7 +49,7 @@ return $t;
 }
 
 /***************************************************
-** Genera un cÃ³digo aleatorio de letras y nÃºmeros **
+** Genera un código aleatorio de letras y números **
 ***************************************************/
 function genera_codigo($longitud){
 
@@ -65,7 +65,7 @@ $letras=array("a","b","c","d","e","f","g","h","j","k","m","n","p","r","t");
 }
 
 /*********************
-** marcar bÃºsquedas **
+** marcar búsquedas **
 **********************/
 function marcar_busquedas($texto,$patron){
 return str_replace(strtolower($patron),"<span class=\"bus\">".strtolower($patron)."</span>",strtolower($texto));

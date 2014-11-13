@@ -1,4 +1,4 @@
-﻿// Sticky v1.0 by Daniel Raftery
+// Sticky v1.0 by Daniel Raftery
 // http://thrivingkings.com/sticky
 //
 // http://twitter.com/ThrivingKings
