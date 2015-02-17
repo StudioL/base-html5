@@ -136,4 +136,22 @@ return $fe;
 		return ($f1 - $f2);
 	}	
 
+	/***************************
+** filtrar nombre archivo **
+****************************/	
+function filtrarNombreArchivo($t){
+	
+	$no_permitidas = array ("ñ","Ñ","á","é","í","ó","ú","Á","É","Í","Ó","Ú","ñ","Ñ","À","Ã","Ì","Ò","Ù","Ã™","Ã ","Ã¨","Ã¬","Ã²","Ã¹","ç","Ç","Ã¢","ê","Ã®","Ã´","Ã»","Ã‚","ÃŠ","ÃŽ","Ã”","Ã›","ü","Ã¶","Ã–","Ã¯","Ã¤","«","Ò","Ã","Ã„","Ã‹");
+	$permitidas    = array ("n","N","a","e","i","o","u","A","E","I","O","U","n","N","A","E","I","O","U","a","a","e","i","o","u","c","C","a","e","i","o","u","A","E","I","O","U","u","o","O","i","a","e","U","I","A","E");
+	$nombreArchivo = strtolower(str_replace($no_permitidas, $permitidas ,$t));
+	
+	$nombreArchivo = str_replace(" ","_",$nombreArchivo);
+	
+	$conservar = '0-9a-z_'; // juego de caracteres a conservar
+	$regex = sprintf('~[^%s]++~i', $conservar); // case insensitive
+	$nombreArchivo = preg_replace($regex, '', $nombreArchivo);
+
+	return $nombreArchivo;
+}
+
 ?>
