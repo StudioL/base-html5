@@ -1,10 +1,4 @@
 <? //CONEXIÓN DB
-//Datos
-define("CON_HOST","localhost");
-define("CON_DB","");
-define("CON_USER","");
-define("CON_PW","");
-//conectar
 if(!$link = mysql_connect(CON_HOST,CON_USER,CON_PW)){ //si no se conecta
 	echo "Error conectando con la DB.";
 } else { //si se conecta
