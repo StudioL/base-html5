@@ -19,8 +19,6 @@
 <link href="css/cssmenu.css" media="screen" rel="stylesheet" type="text/css"/>
 <script src="js/jquery.cssmenu.js" type="text/javascript"></script>
 <script src="js/jquery.Rut.js" type="text/javascript"></script>
-<script src="js/sticky.full.js" type="text/javascript"></script>
-<link href="css/sticky.full.css" media="screen" rel="stylesheet" type="text/css"/>
 <style type="text/css">@import "css/jquery.datepick.css";</style>
 <script src="js/jquery.datepick.min.js" type="text/javascript" ></script>
 <script src="js/jquery.datepick-es.js" type="text/javascript"></script>
@@ -32,8 +30,6 @@
 <script src="js/colorpicker.js" type="text/javascript"></script>
 <link href="css/colorbox.css" media="screen" rel="stylesheet" type="text/css"/>
 <script src="js/jquery.colorbox.js" type="text/javascript"></script>
-<link href="css/jquery.bubblepopup.css" media="screen" rel="stylesheet" type="text/css"/>
-<script src="js/jquery.bubblepopup.min.js" type="text/javascript"></script>
 <script src="http://cdn.datatables.net/1.10.3/js/jquery.dataTables.min.js" type="text/javascript"></script>
 <link href="http://cdn.datatables.net/1.10.3/css/jquery.dataTables.min.css" media="screen" rel="stylesheet" type="text/css"/>
 
@@ -166,15 +162,6 @@
 </ul>
 </article>
 
-<article>
-<h2>Bubble popup</h2>
-<p>Lorem ipsum dolor sit amet, <span>consectetur</span> adipiscing <abbr>elit</abbr>. Aenean commodo libero ac nisi iaculis euismod. Sed eget nunc risus, id pretium tellus. Donec sit amet sapien nunc, ut luctus ligula. Nullam non est orci, id pretium ligula. Nunc non ligula mi. Nullam eu ante nisi, sed laoreet orci. Curabitur tempor feugiat aliquet. Suspendisse commodo scelerisque orci, et faucibus ligula hendrerit et. Donec et lorem in lorem varius viverra. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla feugiat, ligula sagittis vehicula ultricies, tellus magna viverra sapien, in vulputate nunc dui volutpat felis. Vestibulum non dolor felis, nec tincidunt sapien.</p>
-</article>
-
-<article>
-<h2>Sticky</h2>
-<a href="javascript:;" onclick="$.sticky('Aló? Probando');">Link Sticky</a><br />
-</article>
 
 
 <article>
@@ -274,37 +261,6 @@ $(document).ready( function () {
 } );
 </script>
 <script type="text/javascript">
-	$(document).ready(function(){
-		$('#gallery2 a img, table#tabla1 thead tr th, p span, abbr').CreateBubblePopup({
-			position : 'top',
-			align	 : 'center',
-			innerHtml: 'Probando probando',
-			innerHtmlStyle: {
-								color:'#FFFFFF', 
-								'text-align':'center'
-							},	
-			themeName: 	'all-black',
-			themePath: 	'imagenes/jquerybubblepopup_themes'
-		});
-	});
-</script>
-<script type="text/javascript">
-	$('#tabla1').tableHover({
-		colClass: 'hovercolumn',
-		headCols: false,
-		footCols: false,
-		spanCols: false,
-		ignoreCols: [4,5,6],
-		rowClass: 'hoverrow',
-		headRows: false,
-		footRows: false,
-		spanRows: false,
-		allowBody: true,
-		cellClass: 'hovercell',
-		clickClass: 'click'		
-	}); 	
-</script>
-<script type="text/javascript">
 $('#colorSelector').ColorPicker({
 	color: '#0000ff',
 	onShow: function (colpkr) {
@@ -328,12 +284,6 @@ $('#rut').Rut({
    on_success: function(){ $('#rutalert').html("Rut Correcto"); }
  });
 </script>
-<script type="text/javascript">
- $(document).ready(function()
-   {
-     $.sticky('La página se ha terminado de cargar. <strong>Todo OK</strong>');
-   });   
- </script>
 <script type="text/javascript">
 //$('#fecha2').datepick({dateFormat: 'yyyy-mm-dd'});
 //$('#fecha3').datepick({dateFormat: 'yyyy-mm-dd'});
