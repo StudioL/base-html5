@@ -5,6 +5,10 @@ body {
 	text-align: center;
 }
 
+img, embed, object, video {
+  max-width: 100%;
+}
+
 img {
 border: 0px;
 }
